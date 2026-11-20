@@ -1,0 +1,36 @@
+# --- Message bar
+set msgwait 5
+set font "fixed-16"
+set bargravity c
+set bgcolor black
+set fgcolor orange
+set barborder 1
+set barpadding 12 8
+
+# --- wallpaper
+
+# --- welcome
+startup_message off
+exec ratpoison -c "echo ようこそ、グレゴリオ！|  システム起動完了"
+
+# --- apphook
+addhook newwindow exec ratpoison -c "echo 新しいアプリ！"
+
+# --- mainmod
+escape M-a
+
+# --- binds
+bind d exec rofi -show drun
+bind c exec kitty tmux
+
+
+# --- border
+set border 2
+set windowborder 1
+
+# --- colores
+set bgcolor #000000
+set fgcolor #ffb000
+set fwcolor #ffb000
+set bwcolor #221a00
+
